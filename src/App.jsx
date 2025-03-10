@@ -23,9 +23,9 @@ export const App = () => {
             {tabs.map(tab => (
               <Tabs
                 key={tab.id}
-                tab={tab}
-                select={selectTab}
-                setSelect={targ => {
+                tabs={tab}
+                activeTabId={selectTab}
+                onTabSelected={targ => {
                   setSelectedTab(targ);
                 }}
               />
